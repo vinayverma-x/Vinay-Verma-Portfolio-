@@ -1,0 +1,36 @@
+# Robots.txt for TechSpire Solutions - Vinay Verma Portfolio
+# https://techspiresolutions.in
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow important crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://techspiresolutions.in/sitemap.xml
+
+# Host preference
+Host: https://techspiresolutions.in

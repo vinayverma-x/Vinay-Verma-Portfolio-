@@ -1,0 +1,132 @@
+@layer components {
+  /* Home Section Theme */
+  .theme-home {
+    @apply bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950;
+  }
+
+  .theme-home-card {
+    @apply bg-white/80 backdrop-blur-sm border border-luxury-gold/10 shadow-soft
+           dark:bg-gray-900/80 dark:border-luxury-gold/5 dark:shadow-none;
+  }
+
+  .theme-home-heading {
+    @apply text-gray-900 dark:text-white;
+  }
+
+  .theme-home-button {
+    @apply bg-gradient-to-r from-luxury-gold to-luxury-copper text-white
+           hover:from-luxury-copper hover:to-luxury-gold shadow-md hover:shadow-lg;
+  }
+
+  /* About Section Theme */
+  .theme-about {
+    @apply bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900;
+  }
+
+  .theme-about-card {
+    @apply bg-white/90 backdrop-blur-sm border border-purple-500/10 shadow-soft
+           dark:bg-gray-900/90 dark:border-purple-500/5 dark:shadow-none;
+  }
+
+  .theme-about-heading {
+    @apply text-purple-700 dark:text-purple-400;
+  }
+
+  .theme-about-button {
+    @apply bg-gradient-to-r from-purple-600 to-purple-700 text-white
+           hover:from-purple-700 hover:to-purple-600 shadow-md hover:shadow-lg;
+  }
+
+  /* Services Section Theme */
+  .theme-services {
+    @apply bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-gray-950;
+  }
+
+  .theme-services-card {
+    @apply bg-white/90 backdrop-blur-sm border border-blue-500/10 shadow-soft
+           dark:bg-gray-900/90 dark:border-blue-500/5 dark:shadow-none;
+  }
+
+  .theme-services-heading {
+    @apply text-blue-700 dark:text-blue-400;
+  }
+
+  .theme-services-button {
+    @apply bg-gradient-to-r from-blue-600 to-blue-700 text-white
+           hover:from-blue-700 hover:to-blue-600 shadow-md hover:shadow-lg;
+  }
+
+  /* Projects Section Theme */
+  .theme-projects {
+    @apply bg-gradient-to-b from-blue-50 to-white dark:from-gray-950 dark:to-gray-900;
+  }
+
+  .theme-projects-card {
+    @apply bg-white/90 backdrop-blur-sm border border-amber-500/10 shadow-soft
+           dark:bg-gray-900/90 dark:border-amber-500/5 dark:shadow-none;
+  }
+
+  .theme-projects-heading {
+    @apply text-amber-700 dark:text-amber-400;
+  }
+
+  .theme-projects-button {
+    @apply bg-gradient-to-r from-amber-500 to-amber-600 text-white
+           hover:from-amber-600 hover:to-amber-500 shadow-md hover:shadow-lg;
+  }
+
+  /* Contact Section Theme */
+  .theme-contact {
+    @apply bg-gradient-to-b from-white to-green-50 dark:from-gray-900 dark:to-gray-950;
+  }
+
+  .theme-contact-card {
+    @apply bg-white/90 backdrop-blur-sm border border-green-500/10 shadow-soft
+           dark:bg-gray-900/90 dark:border-green-500/5 dark:shadow-none;
+  }
+
+  .theme-contact-heading {
+    @apply text-green-700 dark:text-green-400;
+  }
+
+  .theme-contact-button {
+    @apply bg-gradient-to-r from-green-600 to-green-700 text-white
+           hover:from-green-700 hover:to-green-600 shadow-md hover:shadow-lg;
+  }
+
+  /* Common Theme Components */
+  .theme-bg-subtle {
+    @apply bg-gray-50/50 dark:bg-gray-900/50;
+  }
+
+  .theme-card {
+    @apply rounded-xl overflow-hidden border border-gray-200 bg-white shadow-soft transition-all duration-300
+           dark:border-gray-800 dark:bg-gray-900 dark:shadow-none
+           hover:shadow-medium hover:-translate-y-1 hover:border-luxury-gold/30
+           dark:hover:border-luxury-gold/20;
+  }
+
+  .theme-heading {
+    @apply font-heading font-bold tracking-tight;
+  }
+
+  .theme-badge {
+    @apply inline-flex items-center rounded-full bg-luxury-gold/10 px-2.5 py-0.5 text-xs font-medium text-luxury-gold
+           dark:bg-luxury-gold/20;
+  }
+
+  .theme-button {
+    @apply rounded-full transition-all duration-300;
+  }
+
+  .theme-button-primary {
+    @apply bg-gradient-to-r from-luxury-gold to-luxury-copper text-white
+           hover:from-luxury-copper hover:to-luxury-gold shadow-md hover:shadow-lg;
+  }
+
+  .theme-button-secondary {
+    @apply bg-white border border-luxury-gold/30 text-luxury-gold
+           hover:bg-luxury-gold/5 hover:border-luxury-gold/50 shadow-sm hover:shadow-md
+           dark:bg-gray-900 dark:border-luxury-gold/20 dark:hover:bg-luxury-gold/10;
+  }
+}

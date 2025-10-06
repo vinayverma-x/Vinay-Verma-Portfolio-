@@ -1,0 +1,126 @@
+@layer components {
+  /* Professional Card Styles */
+  .professional-card {
+    @apply rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] bg-white dark:bg-gray-800;
+  }
+
+  .professional-card-hover {
+    @apply hover:border-primary/30 hover:shadow-xl;
+  }
+
+  /* Professional Heading Styles */
+  .professional-heading {
+    @apply font-heading tracking-tight font-bold;
+  }
+
+  .professional-gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-luxury-gold to-luxury-copper;
+  }
+
+  /* Professional Link Styles */
+  .professional-link {
+    @apply inline-flex items-center gap-2 transition-all duration-300;
+  }
+
+  /* Professional Section Styles */
+  .professional-section {
+    @apply py-20 relative overflow-hidden;
+  }
+
+  /* Professional Button Styles */
+  .professional-button {
+    @apply transition-all duration-300 hover:shadow-md;
+  }
+
+  .professional-button-primary {
+    @apply bg-gradient-to-r from-luxury-gold to-luxury-copper text-white hover:from-luxury-copper hover:to-luxury-gold;
+  }
+
+  .professional-button-secondary {
+    @apply bg-white border border-luxury-gold/30 text-luxury-gold hover:bg-luxury-gold/5 hover:border-luxury-gold/50;
+  }
+
+  /* Text Contrast Helpers */
+  .high-contrast-text {
+    @apply text-gray-900 dark:text-white;
+  }
+
+  .medium-contrast-text {
+    @apply text-gray-700 dark:text-gray-200;
+  }
+
+  .low-contrast-text {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+
+  /* Professional Animations */
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .slide-up {
+    animation: slideUp 0.5s ease-in-out;
+  }
+
+  .slide-down {
+    animation: slideDown 0.5s ease-in-out;
+  }
+
+  /* Professional Shadows */
+  .shadow-soft {
+    @apply shadow-[0_5px_15px_rgba(0,0,0,0.05)];
+  }
+
+  .shadow-medium {
+    @apply shadow-[0_10px_25px_rgba(0,0,0,0.1)];
+  }
+
+  .shadow-strong {
+    @apply shadow-[0_15px_35px_rgba(0,0,0,0.15)];
+  }
+
+  /* Professional Gradients */
+  .gradient-gold {
+    @apply bg-gradient-to-r from-luxury-gold to-luxury-copper;
+  }
+
+  .gradient-gold-subtle {
+    @apply bg-gradient-to-r from-luxury-gold/20 to-luxury-copper/20;
+  }
+
+  .gradient-gold-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-luxury-gold to-luxury-copper;
+  }
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
